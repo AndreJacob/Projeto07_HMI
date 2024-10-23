@@ -22,8 +22,11 @@ Backlog:
 - Testar o Funcionamento
 
 Fazer:
-- Garantir o funcionamento básico do ESP32.
+- Modificar o Hardware para comunicação
+- Instalar o software de comunicação com a IHM
+
 Fazendo:
 
 Feito:
 - Separar o Hardware Necessário
+- Garantir o funcionamento básico do ESP32.
