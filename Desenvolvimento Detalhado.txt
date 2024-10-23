@@ -22,10 +22,12 @@ Backlog:
 - Testar o Funcionamento
 
 Fazer:
-- Modificar o Hardware para comunicação
-- Instalar o software de comunicação com a IHM
+
+
 
 Fazendo:
+- Instalar o software de comunicação com a IHM (Com base no software do forno, ja consigo ler os sinais na serial)
+- Modificar o Hardware para comunicação
 
 Feito:
 - Separar o Hardware Necessário
