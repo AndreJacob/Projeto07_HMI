@@ -13,8 +13,7 @@ O projeto deve ser construído e testado.
 
 Backlog:
 
-- Instalar o software de comunicação com a IHM
-- Modificar o Hardware para comunicação
+- Limpar o software base de comunicação com a IHM
 - Criar Tela Básica com um botão liga e outro Desliga
 - Criar um Software base para a comunicação com a IHM
 - Receber os sinais da IHM no ESP32
@@ -26,9 +25,11 @@ Fazer:
 
 
 Fazendo:
-- Instalar o software de comunicação com a IHM (Com base no software do forno, ja consigo ler os sinais na serial)
-- Modificar o Hardware para comunicação
+
+
 
 Feito:
 - Separar o Hardware Necessário
 - Garantir o funcionamento básico do ESP32.
+- Instalar o software de comunicação com a IHM (Com base no software do forno, ja consigo ler os sinais na serial)
+- Modificar o Hardware para comunicação

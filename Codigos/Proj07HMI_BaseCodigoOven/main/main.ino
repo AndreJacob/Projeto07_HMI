@@ -6,7 +6,7 @@
 3) Acertar o PID fazendo analogico com map
 4) Criar uma rotina Controlador ok
 5) modo controle somente onoff com histerese ok
-6) melhorar tags ok
+6) melhorar tags ok teste
 */
 
 #include <HX711_ADC.h>
