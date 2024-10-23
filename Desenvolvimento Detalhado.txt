@@ -1,0 +1,29 @@
+Projeto: 
+Utilizar uma IHM DWIN com um ESP32.
+
+Versão 1.0 deve ser simples. 
+Acionar:
+Relé 01 - Liga apertando Botão liga Relé 01
+	  Desliga apertando Botão Desliga Relé 01.
+
+Comunicação entre ESP32 e HMI será Serial RS232
+Seguir uma idéia ágil para a entrega do produto final
+O projeto deve ser construído e testado.
+
+
+Backlog:
+
+- Instalar o software de comunicação com a IHM
+- Modificar o Hardware para comunicação
+- Criar Tela Básica com um botão liga e outro Desliga
+- Criar um Software base para a comunicação com a IHM
+- Receber os sinais da IHM no ESP32
+- Criar o acionamento da Output de acordo com os sinais recebidos da IHM
+- Testar o Funcionamento
+
+Fazer:
+- Garantir o funcionamento básico do ESP32.
+Fazendo:
+
+Feito:
+- Separar o Hardware Necessário
