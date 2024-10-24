@@ -13,15 +13,14 @@ O projeto deve ser construído e testado.
 
 Backlog:
 
-- Limpar o software base de comunicação com a IHM
-- Criar Tela Básica com um botão liga e outro Desliga
-- Criar um Software base para a comunicação com a IHM
-- Receber os sinais da IHM no ESP32
-- Criar o acionamento da Output de acordo com os sinais recebidos da IHM
+- Criar Ligação da saída com o Relé.(O relé de Estado Solido só aciona se tiver carga na saída)
+
+- Aprender a a fazer o básico na tela somente o botão.
+- Desenvolver e o software da IHM
 - Testar o Funcionamento
 
 Fazer:
-
+- Criar desenhos Tela Básica com um botão liga e outro Desliga
 
 
 Fazendo:
@@ -33,3 +32,5 @@ Feito:
 - Garantir o funcionamento básico do ESP32.
 - Instalar o software de comunicação com a IHM (Com base no software do forno, ja consigo ler os sinais na serial)
 - Modificar o Hardware para comunicação
+- Limpar o software base de comunicação com a IHM (Led Acendendo com codigo mais enxuto)
+- Criar o acionamento da Output de acordo com os sinais recebidos da IHM
