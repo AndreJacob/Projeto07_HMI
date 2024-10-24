@@ -20,7 +20,8 @@ Backlog:
 - Testar o Funcionamento
 
 Fazer:
-- Criar desenhos Tela Básica com um botão liga e outro Desliga
+- Aprender a a fazer o básico na tela somente o botão.
+- Desenvolver e o software da IHM
 
 
 Fazendo:
@@ -34,3 +35,4 @@ Feito:
 - Modificar o Hardware para comunicação
 - Limpar o software base de comunicação com a IHM (Led Acendendo com codigo mais enxuto)
 - Criar o acionamento da Output de acordo com os sinais recebidos da IHM
+- Criar desenhos Tela Básica com um botão liga e outro Desliga
