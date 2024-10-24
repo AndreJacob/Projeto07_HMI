@@ -1,0 +1,137 @@
+Fonte das instruções: https://www.youtube.com/watch?v=UIH0ghxAj4Q
+
+Passo a passo DWIN
+
+01 - Criar 02 pastas, imagens e icones - 
+Criar imagens com a resoluçao do display - no caso 800x480 ou inverso
+imagens nomeadas 00,01,02,03... imagens devem ter extensão .bpm (usar paint)
+Criar icones menores que a tela - nome 00,01,02,03... extensão .png
+
+02 - Criar novo projeto no Software DGUS escolhendo a resolução do display e path
+
+03 - Criar arquivo de fontes
+usar 0# word bank generator tool, pegar o arquivo de fonte que gera na pasta de 
+instalação do software Dwin copiar e colar na pasta DWIN_SET -4 1 -14 -4
+arquivo: 0_DWIN_ASC.HZK 
+
+3.5 - use Pictures conversion para converter imagens para o tamanho certo do display
+
+04 - Criar arquivos .icl para as imagens e icones usando
+DWIN ICL Generator tool
+
+As imagens devem ser salvas 32.icl e icones 42.icl dentro da pasta DWIN_SET
+
+05 - Configurações/ DGUS / CFG EDIT tool - 
+configure:
+
+Touch sound
+Backlight sleep
+UART Baud rate
+Display Direction
+Touch sensitive variable Auto Setting (colocar Auto)
+
+Clique em New CFG e Salve como T5LCFG dentro da pasta DWIN_SET
+a extensão fica como .CFG
+
+06 - Adicione as imagens ao projeto
+
+08 - Usar Display control e Touch control tools to define your project
+
+Exemplos:
+Para navegar entre Telas:
+1 - Page sliding
+Set (em next page) e escolha a imagem no arquivo .bpm
+pode escolher se o sliding e horizontal ou vertical
+
+2 - Basic Touch
+Set (em next page) e escolha a imagem no arquivo .bpm
+
+Inserir variaveis:
+123 Data Variable Display
+Selecione o locar que vai escrever a variavel
+VP ADRESS ex: 5000
+Word Bank ID : 0
+Fonte Size: 40
+Escolha a cor da fonte
+Alinhamento
+tipo de variavel: Int 2 bytes
+numero de digitos: 3
+valor inicil: 000
+
+Esse para 2 botoes de liga e desliga
+Return key code: 
+Selecione a área de botão
+coloque um nome diferente pra cada botao
+coloque o valor que o botão vai retornar 
+exemplo: 0x 0000 ou 0x 0001
+coloque o VP adress:
+Exemplo: 0x 5500
+Flegar Data auto-uploading
+tipo da variavel: Int
+
+Para inserir icones:
+VAR_Icon Display
+selecione a area que vai ficar o icone
+VP adress - o mesmo do botão 5500
+icon file - selecione 42.icl
+minimum :0 - icon id: 0
+simbolo mais selecione o icone
+maximum :1 - icon id: 1
+simbolo mais selecione o icone
+display mode transparence
+filter set:1
+initial value: 0
+background transparent Mode: overlay
+clique no icone na tela que ele vao aparecer
+
+
+09 - Arquivo Salvar e então Generate
+
+10 - Simule a Tela na IHM
+
+11 - Daqui pra frente e colocar no micro SD e enviar para o display
+o micro sd tem que ser menor que 16GB e formatado para no maximo 4096 bytes
+
+Sobre Serial
+
+01 - Conect o conversor serial TTL entre o display e o pc
+02 - RX2 para Tx e Tx2 para Rx e GND para GND
+03 - Instale ou abra o COOLTERM terminal software
+04 - Options - Re-Scan Serial Ports
+05 - Selecione Baud rate 115200
+06 - Click em View Hex (hexadecimal)
+07 - Clique em conect
+
+Exemplo de valor lido:
+
+5A A5 06 83 55 00 01 00 01
+
+5A A5 - Header
+06 - Total de bytes recebidos
+83 - Comando ler
+55 00 - VP Adress
+01 - Numero de palavras recebidas
+00 01 - retornado chave valor 1
+
+Procurar Send String dentro de alguma aba acima
+selecione hexadecimal
+Exemplo:
+valor: 5AA505825500000A
+
+5AA5 - Cabeçalho
+05 numero de bytes pra enviar
+82 Comando Escrever
+5500 - vp address para escrever
+00 0A - valor 10 em decimal
+
+
+
+
+
+
+
+
+ 
+
+
+
